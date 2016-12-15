@@ -21,7 +21,7 @@ struct SuffixArray {
         msbSort(&ranks[0], &aux[0], 0, length, 0);
     }
 
-    char distinctSubstr(long index) {
+    int distinctSubstr(long index) {
         if (length == 0) {
             return 0;
         }
